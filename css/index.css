@@ -160,7 +160,7 @@ footer {
 /* Tablet */
 @media(max-width: 800px) {
     .container {
-        background: pink;
+        /* background: pink; */
         max-width: 800px;
         margin: 0 auto;
     }
@@ -212,7 +212,7 @@ footer {
     .container{
         max-width: 500px;
         margin: 0 auto;
-        background: lightblue;
+        /* background: lightblue; */
     }
     header {
         width: 100%;
