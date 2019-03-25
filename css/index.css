@@ -157,6 +157,64 @@ footer {
     margin: 40px 0 20px;
 }
 
+/* Services Styles */
+
+
+.services-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container nav {
+	margin-bottom: 15px;
+}
+.services-content h1 {
+	font-size: 32px;
+	margin-top: 20px;
+}
+.services-content .services-text {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.services-content .card {
+	width: 420px;
+	border: 1.5px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	background-color: #d9d9db
+}
+
+button {
+	font-size: 25px;
+	background: white;
+	border-radius: 6px;
+	border: 1px solid black;
+	padding: 10px;
+	margin-top: 15px;
+	margin-left: 105px;
+}
+
+.services-content .services-info {
+	display: flex;
+	margin: 20px 0 35px 0;
+	border-top: 2px solid black;
+	padding-top: 30px;
+}
+
+.services-info-img {
+	width: 420px;
+	height: 300px;
+}
+
+.services-info ul {
+	margin-top: 20px;
+	margin-left: 20px;
+	list-style-type: square;
+}
+
+
 /* Tablet */
 @media(max-width: 800px) {
     .container {
@@ -205,6 +263,35 @@ footer {
         margin: 20px 5%;
         width: 90%;
     }
+
+    /* Tablet Services */
+
+    .container-services {
+        width: 95%;
+        margin: 0 0 0 .5%;
+
+    }
+
+    .services-content .services-header-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .services-content .card {
+        width: 49.5%;
+    }
+    .services-content h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .services-content .services-description p {
+        width: 95%;
+        text-align: center;
+    }
+    .card h4 {
+        text-align: center;
+        padding: 0;
+    }
 }
 
 /* Phone */
@@ -247,4 +334,6 @@ footer {
     .main-content .text-content {
         padding-top: 30px;
     }
+
+    /* Phone Servicea */
 }
