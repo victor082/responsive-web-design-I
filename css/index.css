@@ -165,12 +165,17 @@ footer {
         margin: 0 auto;
     }
     header {
+        width: 100%;
         align-items: center;
         flex-direction: column-reverse;
     }
+
     header .logo {
         height: 100%;
         margin-right: 60px;
+    }
+    header nav a {
+        align-items: center;
     }
     .cta{
         margin-right: 170px;
@@ -209,13 +214,24 @@ footer {
         margin: 0 auto;
         background: lightblue;
     }
+    header {
+        width: 100%;
+    }
     header nav {
+        width: 100%;
         flex-direction: column;
-        align-items: center;
     }
     header nav a {
+        padding-top: 20px;
         padding-bottom: 20px;
-        font-size: 25px;
+        font-size: 22px;
+        border-top: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+    #contact-header {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
     }
     .cta {
         margin-right: 20px;
