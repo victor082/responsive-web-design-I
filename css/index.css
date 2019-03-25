@@ -213,6 +213,10 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    header nav a {
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
     .cta {
         margin-right: 20px;
     }
@@ -223,5 +227,8 @@ footer {
     .main-content .bottom-content {
         width: 100%;
         flex-direction: column;
+    }
+    .main-content .text-content {
+        padding-top: 30px;
     }
 }
