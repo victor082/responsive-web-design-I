@@ -157,7 +157,9 @@ footer {
 /* Tablet */
 @media(max-width: 800px) {
     .container {
-        background: pink; /* Will remove, used to see tablet mode */
+        background: pink;
+        max-width: 800px;
+        margin: 0 auto;
     }
     header {
         align-items: center;
@@ -165,7 +167,32 @@ footer {
     }
     header .logo {
         height: 100%;
-        width: 200px;
+        margin-right: 60px;
+    }
+    .cta{
+        margin-right: 170px;
+        padding-bottom: 40px;
+    }
+    .cta .circlelogo {
+        display: none;
+    }
+
+    .main-content  {
+        margin: 20px 5%;
+        width: 90%;
+    }
+    .main-content .middle-img {
+        width: 100%;
+    }
+    .bottom-content {
+        flex-direction: row;
+    }
+    .bottom-content h4 {
+        padding-top: 20px;
+    }
+    .contact {
+        margin: 20px 5%;
+        width: 90%;
     }
 }
 
