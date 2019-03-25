@@ -242,6 +242,9 @@ button {
     .cta .circlelogo {
         display: none;
     }
+    .cta button {
+        margin: 0;
+    }
 
     .main-content  {
         margin: 20px 5%;
