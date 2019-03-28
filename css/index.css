@@ -1,3 +1,342 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+
+.container {
+    width: 880px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    margin: 28px 0 0 91px;
+}
+
+
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
+}
+
+.main-content .top-content {
+    display: flex;
+}
+.main-content .bottom-content {
+    display: flex;
+}
+
+
+.main-content .bottom-content p {
+    padding-right: 20px
+}
+
+
+.contact p {
+    margin: 15px 0;
+}
+
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+/* Services Styles */
+
+
+.services-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.container nav {
+	margin-bottom: 15px;
+}
+.services-content h1 {
+	font-size: 32px;
+	margin-top: 20px;
+}
+.services-content .services-text {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.services-content .card {
+	width: 420px;
+	border: 1.5px solid black;
+	padding: 20px;
+	margin: 20px 0;
+	background-color: #d9d9db
+}
+
+button {
+	font-size: 25px;
+	background: white;
+	border-radius: 6px;
+	border: 1px solid black;
+	padding: 10px;
+	margin-top: 15px;
+	margin-left: 105px;
+}
+
+.services-content .services-info {
+	display: flex;
+	margin: 20px 0 35px 0;
+	border-top: 2px solid black;
+	padding-top: 30px;
+}
+
+.services-info-img {
+	width: 420px;
+	height: 300px;
+}
+
+.services-info ul {
+	margin-top: 20px;
+	margin-left: 20px;
+	list-style-type: square;
+}
+
+
+/* Tablet */
+@media(max-width: 800px) {
+    .container {
+        /* background: pink; */
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    header {
+        width: 100%;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    header .logo {
+        height: 100%;
+        margin-right: 60px;
+    }
+    header nav a {
+        align-items: center;
+    }
+    .cta{
+        margin-right: 170px;
+        padding-bottom: 40px;
+    }
+    .cta .circlelogo {
+        display: none;
+    }
+    .cta button {
+        margin: 0;
+    }
+
+    .main-content  {
+        margin: 20px 5%;
+        width: 90%;
+    }
+    .main-content .top-content {
+        padding-bottom: 20px;
+    }
+    .main-content .middle-img {
+        width: 100%;
+    }
+    .bottom-content {
+        flex-direction: row;
+    }
+    .bottom-content h4 {
+        padding-top: 20px;
+    }
+    .contact {
+        margin: 20px 5%;
+        width: 90%;
+    }
+
+    /* Tablet Services */
+
+    .container-services {
+        width: 95%;
+        margin: 0 0 0 .5%;
+
+    }
+
+    .services-content .services-header-img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .services-content .card {
+        width: 49.5%;
+    }
+    .services-content h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .services-content .services-description p {
+        width: 95%;
+        text-align: center;
+    }
+    .card h4 {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/* Phone */
+@media(max-width: 500px) {
+    .container{
+        max-width: 500px;
+        margin: 0 auto;
+        /* background: lightblue; */
+    }
+    header {
+        width: 100%;
+    }
+    header nav {
+        width: 100%;
+        flex-direction: column;
+    }
+    header nav a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 22px;
+        border-top: 1px solid black;
+        width: 100%;
+        text-align: center;
+    }
+    #contact-header {
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+    .cta {
+        margin-right: 20px;
+    }
+    .main-content .top-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    .main-content .bottom-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    .main-content .text-content {
+        padding-top: 30px;
+    }
+
+    /* Phone Servicea */
+}
